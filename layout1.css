@@ -1,0 +1,27 @@
+*{
+	
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box
+}
+
+.left{
+background-color: yellow;
+float: left;
+width: 58%;
+padding:59px;
+}
+
+.right{
+background-color: pink;
+float: left;
+width: 42%;
+padding: 41px;
+}
+
+.bottom{
+padding: 50px;
+background-color: orange;
+float: left;
+width: 100%;
+}
