@@ -5,8 +5,6 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
-
-
 <style>
     .Flex-First {
         display: flex;
@@ -57,13 +55,33 @@
         height: 100px;
         margin: auto;
         width: 95%;
-
-
     }
 
     input[type="text"] {
         border-radius: 20px;
         padding: 5px;
+    }
+
+    .input-box {
+        position: relative;
+        width: 200px;
+    }
+
+    .input-box input {
+        border-style: ridge;
+        border-radius: 50px;
+        background-color: white;
+        display: block;
+        box-sizing: border-box;
+        width: 450px;
+        height: 30px;
+    }
+
+    .input-box img {
+        position: absolute;
+        top: 6px;
+        left: 420px;
+        float: right;
     }
 
     .Flex-layout {
@@ -76,9 +94,6 @@
         margin: auto;
         width: 95%;
         font-size: 12px;
-
-
-
     }
 
     .Flex-sublayer {
@@ -91,12 +106,10 @@
         margin: auto;
         width: 95%;
         font-size: 12px;
-
     }
 
     .algn-right {
-        margin-right: 10px;
-
+        margin-right: 5px;
     }
 
     .align-left {
@@ -105,8 +118,8 @@
 
     .round {
         background-color: #24D081;
-        width: 15px;
-        height: 15px;
+        width: 12px;
+        height: 12px;
         border-radius: 50%;
         display: inline-block;
         margin-right: 80px;
@@ -118,6 +131,7 @@
         align-items: center;
         justify-content: center;
         font-size: 10px;
+        margin-right: 50px;
     }
 
     #search {
@@ -129,7 +143,6 @@
         flex-direction: column;
     }
 </style>
-<body>
 <div>
     <div class="Flex-First">
 
@@ -150,22 +163,21 @@
 
 </div>
 &nbsp;
+<div>
 
-<div class="Flex-Last1">
+    <div class="Flex-Last1">
 
-    <span style="border-bottom: 2px solid blue;  margin-left: 30px;">My Request</span>
+        <span style="border-bottom: 2px solid blue;  margin-left: 30px;">My Request</span>
 
-    <div>
-        <input type="text" placeholder="search" name="" size="40">
-        <img src="search.png" width="20" height="20" id="search">
+        <div class="input-box">
+            <input type="text" placeholder="search" name="" size="40" />
+            <img src="search.png" width="20" height="20" />
+        </div>
+
+        <button type="button">NEW REQUEST</button>
+
     </div>
-
-    <button type="button">NEW REQUEST</button>
-
 </div>
-
-
-
 &nbsp;
 <div>
 
@@ -231,14 +243,10 @@
     <div class="show">
         <p>SHOW MORE</p>
 
-        <img src="last.png" height="20" width="20">
-
-
-
+        <img src="last.png" height="13" width="13">
     </div>
+
 </div>
-
-
 </body>
 
 </html>
