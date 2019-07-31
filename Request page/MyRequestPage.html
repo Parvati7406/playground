@@ -5,6 +5,8 @@
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 </head>
+
+
 <style>
     .Flex-First {
         display: flex;
@@ -13,11 +15,17 @@
         background-color: white;
         justify-content: space-between;
         float: left;
-        height: 40px;
+        height: 70px;
+        box-shadow: 25px;
+        border-block: 2px;
+        border: lightseagreen;
+
     }
 
     body {
-        background-color: #F6F8F9;
+        background-color: lightgrey;
+        border: 1px solid black;
+        margin: -5px 0px 0px 0px;
     }
 
     .Flex-Last {
@@ -26,7 +34,7 @@
         background-color: white;
         align-items: center;
         justify-content: flex-end;
-        height: 40px;
+        height: 70px;
         margin-left: 10px;
     }
 
@@ -52,9 +60,11 @@
         background-color: white;
         align-items: center;
         justify-content: space-between;
-        height: 100px;
+        border: 1px solid gainsboro;
         margin: auto;
         width: 95%;
+        padding-top: 25px;
+        padding-bottom: 25px;
     }
 
     input[type="text"] {
@@ -64,13 +74,11 @@
 
     .input-box {
         position: relative;
-        width: 200px;
     }
 
     .input-box input {
         border-style: ridge;
         border-radius: 50px;
-        background-color: white;
         display: block;
         box-sizing: border-box;
         width: 450px;
@@ -87,29 +95,28 @@
     .Flex-layout {
         display: flex;
         flex-direction: row;
-        background-color: white;
         align-items: center;
-
         height: 100px;
         margin: auto;
-        width: 95%;
         font-size: 12px;
     }
 
     .Flex-sublayer {
         display: flex;
         flex-direction: row;
-        background-color: white;
         align-items: center;
         justify-content: space-between;
         height: 100px;
         margin: auto;
-        width: 95%;
         font-size: 12px;
+        border: 1px solid #F7EFEF;
+        padding-bottom: 10px;
+        padding-top: 10px;
+
     }
 
     .algn-right {
-        margin-right: 5px;
+        margin-right: 10px;
     }
 
     .align-left {
@@ -118,8 +125,8 @@
 
     .round {
         background-color: #24D081;
-        width: 12px;
-        height: 12px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         display: inline-block;
         margin-right: 80px;
@@ -131,7 +138,8 @@
         align-items: center;
         justify-content: center;
         font-size: 10px;
-        margin-right: 50px;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     #search {
@@ -142,111 +150,123 @@
         display: flex;
         flex-direction: column;
     }
+
+    .border {
+        border: 1px solid black;
+        width: 95%;
+        margin: auto;
+        background-color: white;
+    }
 </style>
-<div>
-    <div class="Flex-First">
 
-        <img src="First.png" width="30" height="30"></div>
+<body>
+    <div>
+        <div class="Flex-First">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 
-
-    <div class="Flex-Last">
-        <img src="p.jpg" width="30" height="30">
-
-
-        <p>Parvati</p>
+            <img src="First.png" width="30" height="30"></div>
 
 
-        <img src="Last.png" width="10" height="10">
+        <div class="Flex-Last">
+            <img src="p.jpg" width="30" height="30">
+            &nbsp;
 
+            <p>Parvati</p>
+            &nbsp;
+
+            <img src="Last.png" width="10" height="10">
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+        </div>
 
     </div>
-
-</div>
-&nbsp;
-<div>
+    &nbsp;
 
     <div class="Flex-Last1">
 
         <span style="border-bottom: 2px solid blue;  margin-left: 30px;">My Request</span>
 
         <div class="input-box">
-            <input type="text" placeholder="search" name="" size="40" />
-            <img src="search.png" width="20" height="20" />
+            <input type="text" placeholder="search" name="" size="40">
+            <img src="search.png" width="20" height="20" id="search">
         </div>
 
         <button type="button">NEW REQUEST</button>
 
     </div>
-</div>
-&nbsp;
-<div>
+    &nbsp;
+    <div class="border">
 
-    <div class="Flex-layout">
-        <div>
-            <img src="left.png" width="30" height="30"></div>
-        <div class="filter">
-            <span>FILTER</span>
-            <span><sub>showing approved requests</sub></span>
+        <div class="Flex-layout">
+            <div>
+                <img src="left.png" width="30" height="30"></div>
+            <div class="filter">
+                <span>FILTER</span>
+                <span><sub>showing approved requests</sub></span>
+            </div>
+        </div>
+
+        <div class="Flex-sublayer">
+            <div class="align-left">
+                <p>PUR-2019-056</p>
+                <p>submitted on</p>
+                <p>06 Jul 2019</p>
+            </div>
+            <img src="bell.png" height="50" width="50">
+            <div>
+                <span class="algn-right"> APPROVED</span>
+                <span class="round"></span>
+
+            </div>
+        </div>
+        <div class="Flex-sublayer">
+            <div class="align-left">
+                <p>PUR-2019-056</p>
+                <p>submitted on</p>
+                <p>06 Jul 2019</p>
+            </div>
+            <img src="bell.png" height="50" width="50">
+            <div>
+                <span class="algn-right"> APPROVED</span>
+                <span class="round"></span>
+            </div>
+        </div>
+        <div class="Flex-sublayer">
+            <div class="align-left">
+                <p>PUR-2019-056</p>
+                <p>last saved on</p>
+                <p>06 Jul 2019</p>
+            </div>
+            <img src="bell.png" height="50" width="50">
+            <div>
+                <span class="algn-right"> APPROVED</span>
+                <span class="round"></span>
+            </div>
+        </div>
+        <div class="Flex-sublayer">
+            <div class="align-left">
+                <p>PUR-2019-056</p>
+                <p>submitted on</p>
+                <p>20 June 2019</p>
+            </div>
+            <img src="bell.png" height="50" width="50">
+            <div>
+                <span class="algn-right"> APPROVED</span>
+                <span class="round"></span>
+            </div>
+        </div>
+
+        <div class="show">
+            <p>SHOW MORE</p>
+
+            <img src="last.png" height="13" width="13">
+
+
+
         </div>
     </div>
 
-    <div class="Flex-sublayer">
-        <div class="align-left">
-            <p>PUR-2019-056</p>
-            <p>submitted on</p>
-            <p>06 Jul 2019</p>
-        </div>
-        <img src="bell.png" height="50" width="50">
-        <div>
-            <span class="algn-right"> APPROVED</span>
-            <span class="round"></span>
 
-        </div>
-    </div>
-    <div class="Flex-sublayer">
-        <div class="align-left">
-            <p>PUR-2019-056</p>
-            <p>submitted on</p>
-            <p>06 Jul 2019</p>
-        </div>
-        <img src="bell.png" height="50" width="50">
-        <div>
-            <span class="algn-right"> APPROVED</span>
-            <span class="round"></span>
-        </div>
-    </div>
-    <div class="Flex-sublayer">
-        <div class="align-left">
-            <p>PUR-2019-056</p>
-            <p>last saved on</p>
-            <p>06 Jul 2019</p>
-        </div>
-        <img src="bell.png" height="50" width="50">
-        <div>
-            <span class="algn-right"> APPROVED</span>
-            <span class="round"></span>
-        </div>
-    </div>
-    <div class="Flex-sublayer">
-        <div class="align-left">
-            <p>PUR-2019-056</p>
-            <p>submitted on</p>
-            <p>20 June 2019</p>
-        </div>
-        <img src="bell.png" height="50" width="50">
-        <div>
-            <span class="algn-right"> APPROVED</span>
-            <span class="round"></span>
-        </div>
-    </div>
-
-    <div class="show">
-        <p>SHOW MORE</p>
-
-        <img src="last.png" height="13" width="13">
-    </div>
-
-</div>
 </body>
 
 </html>
