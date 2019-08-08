@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login Page</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="LoginScript.css">
+
+
+
+    <script>
+
+        function Login() {
+
+            var un = document.getElementById("username").value;
+            var ps= document.getElementById("password").value;
+
+            if (un == "parvati" && ps== "paru@123") {
+                alert("Login Successfully.");
+            }
+            else
+            {
+                alert("Please enter the valid username and password.");
+            }
+        }
+
+    </script>
+</head>
+
+
+<body>
+    <div class="front">
+
+        <form>
+            <div class="Homepage">
+                <div class="login">
+                    <h2>Login</h2>
+                </div>
+
+
+                <div class="uname-password">
+                    <div id="uname-password-text">
+                        <span><b>Username</b></span>
+
+                        <input type="text" name="uname" id="username" required>
+                    </div>
+
+                    <div id="uname-password-text">
+
+                        <span><b>Password</b></span>
+
+                        <input type="password" placeholder="********" name="psw" id="password" required>
+
+                    </div>
+                </div>
+
+
+                <div class="remember ">
+                    <div id="checkbox-text">
+                        <input type="checkbox" checked="checked" name="remember">
+                        <span>Remember me</span>
+                    </div>
+                    <div id="forgot">
+                        <span class="psw"><a href="#">Forgot password?</a></span>
+                    </div>
+
+                    <div style="clear: both"></div>
+                </div>
+
+
+                <button type="submit" onclick="Login()">Login</button>
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
