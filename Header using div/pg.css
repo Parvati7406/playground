@@ -1,0 +1,49 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+.main{
+    border: 1px solid black;
+    
+    
+}
+
+.left{
+    border: 1px solid red;
+    
+    width: 10%;
+    float: left;
+}
+
+.right{
+    border:1px solid blue;
+
+    width: 90%;
+    float: right;
+}
+image{
+    border-radius: 50%;
+}
+
+.left1{
+    border-radius: 40%;
+    float: left;
+}
+.right1{
+    border-radius:40%;
+    float: right;
+}
+.right2{
+
+    float: right;
+}
+.right3{
+    float:right;
+    border-radius:40%;
+}
+
