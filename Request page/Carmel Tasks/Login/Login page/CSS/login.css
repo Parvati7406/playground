@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body {background: #F6F8F9; font-family: Arial, Helvetica, sans-serif;}
+
+.main{
+}
+
+.Homepage {
+   width: 95%;
+   margin: auto;
+   margin-top: 3%;
+   margin-bottom: 3%;
+   background-color:white;
+   box-shadow: grey 1px 1px 1px 1px;
+   
+}
+
+.login-field{
+    width: 40%;
+
+    margin: auto;
+}
+
+.log{
+font-size: 1.17vw;
+color: #595959;
+border-bottom: 3px solid #707070;
+text-transform: uppercase;
+padding-bottom: 3px;
+}
+
+.user-input{
+    padding-top: 10%;
+    font-size: 0.8vw;
+    color: #505050;
+    
+}
+
+input[type=text], input[type=password] {
+  width: 80%;
+  padding: 12px 30px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  position: relative;
+}
+
+.text{
+    font-size: 10px;  
+    padding-bottom: 10%; 
+}
+
+
+
+.text-left{
+    float:left;
+    color:#707070;
+
+}
+
+.text-right{
+    float: right;
+    
+}
+.text-right a{
+    text-decoration: none;
+    position: absolute;
+    right:39%;
+    border-bottom: 1px solid #868686;
+    color:#707070;
+}
+
+button {
+  background-color: #32BDD2;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+button:hover {
+  opacity: 0.8;
+}
