@@ -1,0 +1,203 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background:white;
+}
+
+.main{
+    background-color: white;
+    
+}
+
+.left{
+    float: left;
+    width: 5%;
+    padding-left: 25px;
+    
+}
+
+.right{
+    float: right;
+    width: 95%;
+    padding-right: 25px;
+    
+}
+
+.right-img{
+    float: right;
+    width: 10%;
+    /* border:1px solid black; */
+}
+#image{
+    border-radius: 50%;
+}
+
+
+
+.flex-main{
+    background: gray;
+    border:1px solid purple;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    
+}
+
+.flex-left{
+    display: flex;
+    align-items: center; 
+}
+
+
+
+
+
+.flex-main1{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+    /* border:1px solid blue; */
+}
+
+
+.personal{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.personal span{
+    background: #e7e7e7;
+    font-weight: bold;
+}
+
+.desc p{
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+
+
+.plans{
+    padding-top: 2%;
+    padding-left: 1.5%;
+    /* border: 1px solid green; */
+}
+
+.sub-plans{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 30%;
+    /* border: 1px solid red; */
+}
+
+#prgm{
+    color: blueviolet;
+    padding-bottom: 2px;
+    border-bottom: 2px solid blueviolet;
+    padding-bottom: 2px;
+}
+
+#impl{
+    padding-right: 20px;
+}
+
+
+
+
+.add-img{
+    padding-top: 1%;
+    padding-bottom: 1%;   
+    
+}
+
+.add-img img{
+    margin-left: 2%;
+}
+
+.text-line{
+    border-left:  1px solid black;
+    margin-left:4%;
+}
+
+
+
+.about-plans{
+
+}
+
+.about-plan-one{
+    display: flex;
+    flex-direction:row;
+}
+.round{
+    height: 12px;
+    width: 12px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-left: -7px;
+     border:1px solid black;  
+     background: white;
+}
+#about-plan-one-text{
+    
+    font-weight: bold;
+    padding-left: 2%;
+}
+
+#about-plan-one-desc{
+
+    padding-top:4px;
+    padding-bottom: 1%;
+    margin-left: 4%;
+    display: flex;
+    flex-direction: column;  
+    
+}
+
+
+.sub-header{
+    
+}
+
+.sub-header-fill{
+    background: rgb(129, 129, 247);
+    display: flex;
+    align-items: center;
+    width: 60%;
+    /* padding-left: 7%; */
+}
+
+.sub-header-left{
+    width: 50%;
+    float: left;
+    
+}
+
+#sub-header-left-span{
+
+    font-weight: bold;
+    padding-left: 7%;
+    
+}
+
+
+.sub-header-right{
+    width: 50%;
+    float: right;
+    
+}
+
+.sub-header-right-sub{
+    width: 40%;
+    float: right;
+}
+
