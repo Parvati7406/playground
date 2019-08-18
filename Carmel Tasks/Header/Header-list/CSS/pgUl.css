@@ -1,0 +1,30 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+main{
+  
+  
+}
+
+
+.left{
+    width: 10%;
+    float: left;
+    list-style-type: none;
+}
+
+.right{
+    width: 90%;
+    float: right;
+    list-style-type: none;
+}
+
+.right1{
+    border-radius: 50%;
+}
