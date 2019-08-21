@@ -24,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
         img2 = findViewById(R.id.imageView2);
         text1 = findViewById(R.id.textView5);
         text2 = findViewById(R.id.textView6);
+        text3=findViewById(R.id.textView2);
 
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -36,7 +37,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
 
-        text3=findViewById(R.id.textView2);
+
 
         text3.setOnClickListener(new View.OnClickListener() {
             @Override
