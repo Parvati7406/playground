@@ -1,0 +1,236 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F6F8F9;
+}
+
+.head{
+    margin: auto;
+    box-shadow: 1px 1px 1px 1px #D8D3D3;
+    width: 100%;
+    margin-bottom:20px;
+    background-color: white;
+    padding-top:7px;
+    padding-bottom:7px;
+}
+
+.Flex-First {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    float: left;
+    padding-left: 15px;
+}
+
+.Flex-Last {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    padding-right: 18px;
+}
+
+#image {
+    border-radius: 50%;
+}
+
+
+.info{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width:90%;
+    margin: auto;
+    background-color: white;
+    box-shadow: 1px 1px 1px 2px #D8D3D3;
+    border: 1px solid gainsboro;
+}
+
+.vertical-main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10%;
+    padding-bottom: 275px;
+    
+}
+
+.vertical{
+    display: flex;
+    align-items: center;
+    transform: rotate(270deg);
+    margin-top: 120px;
+    font-weight: bold;
+}
+.vertical-image{
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin-top: 80px;
+
+}
+
+.flex-container{
+  display: flex;
+  flex-direction:column;
+  padding-left: 50px;
+  padding-right: 35px;
+  width: 90%;
+  justify-content: flex-start;
+}
+
+
+.flex-sub-item-left{
+    display: flex;
+    flex-direction:row;
+    background: #F0F0F0;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding-top:15px;
+    padding-bottom:15px;
+    margin-top: 50px;
+  }
+
+.flex-sub-item{
+display: flex;
+flex-direction: row;
+align-items: center;
+justify-content: space-between;
+width: 100%;
+}
+
+.flex-sub-container2{
+display: flex;
+flex-direction: column;
+width: 70%;
+}
+
+.flex-sub-container3{
+display: flex;
+flex-direction: row;
+align-items: center;
+width: 30%
+}
+
+
+
+.main-flex{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between; 
+    align-items: center;
+    width: 100%;
+    padding-top:35px;
+    padding-bottom:35px;
+    font-size: 12px;
+    border-bottom: 1px solid #F0F0F0;
+  }
+  
+  .main-flex-first{
+    display: flex;
+    flex-direction:column;
+    width: 30%;
+    margin-left: 30px;
+  }
+  .main-flex-first-padding p{
+    padding-top: 3px;
+  }
+  .main-flex-first span{
+  color:#747474;
+  font-weight: bold;
+  font-size: 10px;
+  padding-top:10px;
+  }
+  
+  .main-flex-second{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 10%;
+  }
+  
+  .main-flex-third{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 15%;
+  }
+  
+  .main-flex-fourth{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 15%;
+  }
+  
+  .main-flex-fifth{
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    width: 10%;
+  }
+  
+  .main-flex-fifth img{
+    width: 40px;
+    height: 40px;
+  }
+  
+  .down-flex{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between; 
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb                                                                       bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb    bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb   bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb                                                                                                                                                                                                                                                                                                                                                   align-items: center;
+    width: 100%;
+    padding-top: 35px;
+    font-weight: bold;
+    font-size: 12px;
+  }
+
+  .flex-back a{
+  margin-left: 30px;
+  }
+
+  .flex-back{
+   display: flex;
+  flex-direction:row;
+  justify-content: space-between; 
+  align-items: center;
+  padding-top: 35px;
+  font-weight: bold;
+  font-size: 12px;
+  }
+
+  .main-save-flex{
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+  }
+  .flex-save{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+
+  }
+  
+
+button {
+    background-color: #32BDD2;
+    color: white;
+    padding: 8px 16px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-right: 30px;
+  
+  }

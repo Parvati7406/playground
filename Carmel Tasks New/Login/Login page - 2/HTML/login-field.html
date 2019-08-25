@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="../CSS/login-field.css">
+
+</head>
+
+<body>
+    <div class="main">
+        <form>
+
+            <div class="Homepage">
+
+                <div style="min-height: 13vh"></div>
+                <div class="login-field">
+
+                    <span class="log">Login</span>
+
+                    <div class="user-input">
+                        <p>Email or Username</p>
+                        <input type="text" name="uname" required>
+                        <div class="field-img">
+                            <img src="../IMAGES/warning.png" height="10" width="10">
+                            <span>This field is required</span>
+                        </div>
+
+                    </div>
+
+                    <div class="user-input">
+                        <p>Password</p>
+                        <input type="password" placeholder="*********" name="" required>
+                        <div class="field-img">
+                            <img src="../IMAGES/warning.png" height="10" width="10">
+                            <span>This field is required</span>
+                        </div>
+                    </div>
+
+                    <div class="text">
+                        <div class="text-left">
+                            <input type="checkbox" name="remember">
+                            <span> Remember me</span>
+                        </div>
+
+                        <span class="text-right"><a href="../../forgot-password/program3.html">Forgot password</a></span>
+
+                        <div style="clear: both"></div>
+                    </div>
+
+                    <div>
+                        <button type="button" onclick="Login()">Login</button>
+                    </div>
+                    <script>
+                    function Login(){
+                        document.location="../../../MyReq/MyReq-diff/HTML/MyRequestPage2.html";
+                    }
+                    
+                    </script>
+                    </div>
+
+                </div>
+                <div style="min-height: 13vh"></div>
+
+            </div>
+
+
+        </form>
+    </div>
+
+
+</body>
+
+</html>

@@ -1,0 +1,40 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    background-color: white;
+}
+
+table{
+  width: 100%;  
+}
+
+
+.left
+{
+    float: left;
+    width: 10%;
+}
+
+.right{
+    float:right;
+    width: 90%;
+}
+
+image{
+    border-radius: 50%;
+}
+.right1{
+    float: right;
+    border-radius:40%;
+}
+.right2{
+    float: right;
+}
+.right3{
+    float: right;
+    border-radius:40%;
+}
+

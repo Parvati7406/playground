@@ -1,0 +1,210 @@
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+body{
+    margin:auto;
+    background-color: #F6F8F9;
+    box-shadow: 1px 1px 1px 2px #D8D3D3;
+    font-family: "Roboto";
+}
+
+
+
+.main{
+    padding-top:10px;
+    padding-bottom: 10px;
+    background-color:#FFFFFF;
+    box-shadow: 1px 1px 1px 1px #D8D3D3;
+}
+
+.left{
+    display: flex;
+    float: left;
+    justify-content:center;
+    flex-direction:row;
+    align-items: center;
+    width: 5%;
+    padding-left: 25px;
+}
+  
+.right{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:flex-end;
+    width: 95%;
+    padding-right: 32px;
+}
+
+.right-img{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content:center;  
+    width: 10%; 
+}
+
+#image{
+    border-radius: 50%;
+}
+
+
+
+
+.flex-main{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+    background: #d1cfcf;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    padding-left: 1.5%;
+}
+
+
+
+
+.flex-main-title{
+    display: flex;
+    flex-direction:column;
+    justify-content: flex-start;
+    padding-top: 2%;
+    padding-left: 3%;
+}
+
+.personal-title{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.personal-title span{
+    background: #e7e7e7;
+    font-weight: bold;
+}
+
+.short-desc p{
+    font-weight: bold;
+    padding-top: 3px;
+}
+
+
+
+
+
+.plan{
+    padding-top: 2%;
+    padding-left: 3%;
+}
+
+.plan-name{
+    display: flex;
+    flex-direction:row;
+    justify-content: space-between;
+    width: 30%;
+    text-transform: uppercase;
+}
+
+#program{
+    color: blueviolet;
+    padding-bottom: 2px;
+    border-bottom: 2px solid blueviolet;
+}
+
+.add-img{
+    padding-top: 2%;
+    padding-bottom: 1%;    
+}
+
+.add-img img{
+    margin-left: 2%;
+}
+
+
+
+
+
+.text-line{ 
+    
+}
+
+.about-plans{
+    display: flex;
+    flex-direction:column;
+    padding-bottom: 1.5%;
+    position: relative; 
+    border-left:1px solid black;
+    width: 93%;
+    margin: auto;
+}
+
+.about-plans-one{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+    width: 40%;  
+}
+
+.round{
+    height: 16px;
+    width: 16px;
+    border-radius: 50%;
+    display: inline-block;
+    position: absolute;
+    left: -8px;
+    border:1px solid black;
+    background: #FFFFFF;
+}
+
+#intro-text{
+    font-weight: bold;
+    margin-left: 8%;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 3%;
+    padding-top: 1%;
+}
+
+
+
+
+.sub-header-fill{
+    background: rgb(126, 152, 223);
+    width: 80%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding-top:0.4%;
+    padding-bottom:0.4%;
+}
+
+.sub-header-left{
+    display: flex;
+    flex-direction:row;
+    align-items: center;
+    width: 50%;  
+}
+
+.sub-header-right{
+    width: 50%;
+}
+
+.sub-header-right-sub{
+    display: flex;
+    justify-content: flex-end;
+}
+
+#setting{
+    margin-left: 5px;
+    margin-right: 5px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Requisition Invite</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Req-Invite.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="head">
+        <div class="Flex-First">
+            <img src="../IMAGES/First.png" width="30" height="30">
+        </div>
+        <div class="Flex-Last">
+            <img src="../IMAGES/p.jpg" width="30" height="30" id="image">
+            <p style="padding:7px">Parvati </p>
+            <img src="../IMAGES/Last.png" width="10" height="10">
+        </div>
+    </div>
+    <div>
+        <div class="info">
+
+            <div class="vertical-main">
+                <div class="vertical">
+                    <span>REQUISITION</span>
+                </div>
+                <div class="vertical-image">
+                    <img src="../IMAGES/request4.png" width="80" height="400">
+                </div>
+            </div>
+
+            <div class="flex-container">
+
+                <div class="flex-sub-container-left">
+                    <div class="flex-sub-container-left1">
+                        <span><b>INVITE PEOPLE</b></span>
+                        <p>Lorem ipsum dolor sit amet, consecture adipicing elit.</p>
+                    </div>
+                    <div class="flex-item-right" onclick="add_people()">
+                        <div class="flex-sub-item-right">
+                            <span>ADD PEOPLE</span>
+                        </div>
+
+                        <div class="flex-sub-item-image">
+
+                            <img src="../IMAGES/plus.png" width="40" height="40">
+                        </div>
+                    </div>
+
+                    <script>
+						function add_people(){
+						document.location = "../../Add-people/HTML/Add-people.html";
+						}
+					</script>
+
+
+
+                </div>
+                
+
+                <div class="flex-box1">
+                    <div class="flex-box1-image">
+                        <img src="../IMAGES/p.jpg" width="30" height="30">
+                    </div>
+                    <div class="flex-box-info">
+                        <span class="font-12">Parvati</span>
+                        <span class="font-10">Lorem ipsum dolor sit amet.</span>
+                    </div>
+                    <div class="flex-box-img1">
+                        <img src="../IMAGES/delete.png" width="25" height="25">
+                    </div>
+                </div>
+
+
+                <div class="flex-box1">
+                    <div class="flex-box1-image">
+                        <img src="../IMAGES/p.jpg" width="30" height="30">
+                    </div>
+                    <div class="flex-box-info">
+                        <span class="font-12">Parvati</span>
+                        <span class="font-10">Lorem ipsum dolor sit amet.</span>
+                    </div>
+                    <div class="flex-box-img1">
+                        <img src="../IMAGES/delete.png" width="25" height="25">
+                    </div>
+                </div>
+
+
+                <div class="flex-box1">
+                    <div class="flex-box1-image">
+                        <img src="../IMAGES/p.jpg" width="30" height="30">
+                    </div>
+                    <div class="flex-box-info">
+                        <span class="font-12">Parvati</span>
+                        <span class="font-10">Lorem ipsum dolor sit amet.</span>
+                    </div>
+                    <div class="flex-box-img1">
+                        <img src="../IMAGES/delete.png" width="25" height="25">
+                    </div>
+                </div>
+
+
+                <div class="flex-draft">
+
+                    <a href="../../Request-save-draft/HTML/ReqSaveDraft.html" style="color:#595959;">SAVE DRAFT</a>
+
+                    <div>
+                        <a href="../../Request-Attachment/HTML/ReqAttachments.html" style="color:#32BDD2; padding-right: 20px;">Back</a>
+                        <button type="submit" onclick="nextPage()">Next<img src="../IMAGES/arrow.png" width="20" height="20"
+                                style="padding-top: 8px;"></button>
+                    </div>
+
+                    <script>
+						function nextPage() {
+							document.location = "../../RequestApprove/HTML/Request-Approve.html";
+						}
+					</script>
+	
+
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </div>
+    </div>
+</body>
+
+</html>
