@@ -57,7 +57,8 @@ body {
     align-items: center;
     justify-content: center;
     width: 10%;
-    padding-bottom: 275px;
+    /* padding-bottom: 275px; */
+    /* border: 1px solid red; */
     
 }
 
@@ -65,14 +66,17 @@ body {
     display: flex;
     align-items: center;
     transform: rotate(270deg);
-    margin-top: 120px;
+    margin-top: 90px;
     font-weight: bold;
+    /* border: 1px solid red; */
+
 }
 .vertical-image{
     display: flex;
     align-items: center;
     width: 80%;
     margin-top: 80px;
+    /* border: 1px solid red; */
 
 }
 
@@ -84,6 +88,8 @@ body {
     padding-right: 35px;
     width: 90%;
     justify-content: flex-start;
+    /* padding-bottom:25%; */
+    /* border: 1px solid red; */
   }
   
   .right-main-data-flex{
@@ -107,6 +113,8 @@ body {
     font-size: 12px;
     padding-top:3px;
     margin-left: 30px;
+    /*  */
+
   }
   
   
@@ -144,7 +152,7 @@ body {
     align-items: center;
     border:2px dashed white;
     margin: auto;
-    width: 50%;
+    width: 80%;
     padding: 5px;
     color: #FFFFFF;
   }

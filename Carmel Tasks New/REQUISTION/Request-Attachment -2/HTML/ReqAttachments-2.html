@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Requisition Attachment </title>
+    <link rel="stylesheet" type="text/css" href="../CSS/ReqAttachments-2.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+</head>
+
+
+<body>
+
+    <div class="head">
+        <div class="Flex-First">
+            <img src="../IMAGES/First.png" width="30" height="30">
+        </div>
+        <div class="Flex-Last">
+            <img src="../IMAGES/p.jpg" width="30" height="30" id="image">
+            <p style="padding:7px">Parvati </p>
+            <img src="../IMAGES/Last.png" width="10" height="10">
+        </div>
+    </div>
+
+    <div class="info">
+
+        <div class="vertical-main">
+            <div class="vertical">
+                <span>REQUISITION</span>
+            </div>
+            <div class="vertical-image">
+                <img src="../IMAGES/request3.png" width="80" height="400">
+            </div>
+        </div>
+
+
+
+        <div class="right-main-flex">
+            <div class="right-main-data-flex">
+                <span>ATTACHMENTS</span>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+            </div>
+
+            <div class="file-selector-flex">
+                <div class="file-selector-left-flex">
+                    <div>
+                        <span><b>Select a file from my computer.</b></span>
+                        <div>
+                            <p>Maximum allowed size is 5MB per file. only documents like</p>
+                            <p>pdf, docx, ppt, xis etc are allowed.</p>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" id="browse">BROWSE</button>
+                    </div>
+                </div>
+
+
+                <div class="file-selector-right-flex">
+
+                    <div class="file-selector-right-flex-rect">
+                        <img src="../images/upload.png" width="30" height="30">
+                        <span>Drop a file here</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <div class="box-one-flex">
+                <div class="col-wise">
+                    <div class="box-text">
+                        <span>abc0037429023.doc</span>
+                        <span>976 KB</span>
+
+                    </div>
+                    <div>
+                        <span id="write">Write the description...</span>
+                    </div>
+                    
+                </div>
+                <button onclick="upload()">upload</button>
+            </div>
+<script>
+function upload(){
+    window.location="../../Request-Attachment/HTML/ReqAttachments.html";
+}
+</script>
+
+            <div class="clr">
+                <img src="../images/warning.png" height="25" width="25">
+                <span>This field is required</span>
+            </div>
+
+
+
+
+
+            <div class="ref-flex">
+
+                    <a href="../../Request-save-draft - 3/HTML/ReqSaveDraft-3.html" style="color:#595959;">SAVE DRAFT</a>
+    
+                    <div>
+                        <a href="../../Request-item/HTML/RequestItem.html"
+                            style="color:#32BDD2; padding-right: 20px;">Back</a>
+                        <button type="submit" onclick="nextPage()">Next<img src="../images/arrow.png" width="20" height="20"
+                                style="padding-top: 8px;"></button>
+                    </div>
+    
+                    <script>
+                        function nextPage() {
+                            document.location = "../../Req-invite-people/HTML/Req-Invite.html";
+                        }
+                    </script>
+                </div>
+
+
+        </div>
+
+
+
+    </div>
+</body>
+
+</html>

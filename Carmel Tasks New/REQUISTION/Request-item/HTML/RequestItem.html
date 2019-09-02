@@ -63,8 +63,17 @@
                         <p>Core) E3-1225 v5'(3.3GHz/Cache 8MB)</p>
 
                     </div>
-                    <span>READ MORE</span>
+                    <div onclick="Read()">
+                        <span> READ MORE </span>
+                    </div>
+
                 </div>
+
+                <script>
+                    function Read() {
+                        window.location = "../../Request-item - 2/HTML/RequestItem-2.html"
+                    }
+                </script>
                 <div class="main-flex-second">
                     <span>01</span>
                 </div>
@@ -74,9 +83,24 @@
                 <div class="main-flex-fourth">
                     <span>Rs. 45000</span>
                 </div>
+
                 <div class="main-flex-fifth">
-                    <img src="../IMAGES/equal.png">
+                    <ul>
+                        <li class="dropdown">
+                            <a href="javascript:void(0)"><img src="../IMAGES/equal.png" onclick="myFunction()"
+                                    class="dropbtn" alt="Image not Found"></a>
+                            <div id="myDropdown" class="dropdown-content">
+                                <a href="#">EDIT</a>
+                                <a href="#">DELETE</a>
+                            </div>
+                        </li>
+                    </ul>
                 </div>
+
+
+
+
+
             </div>
 
 
@@ -208,20 +232,43 @@
 
             <div class="main-save-flex">
                 <div class="flex-save">
-                    <a href="../../Request-save-draft/HTML/ReqSaveDraft.html" style="color:#595959;">SAVE DRAFT</a>
+                    <a href="../../Request-save-draft - 2/HTML/ReqSaveDraft-2.html" style="color:#595959;">SAVE DRAFT</a>
 
                 </div>
                 <div class="flex-back">
-                    <a href="../../Requisition/HTML/Requistion.html" style="color:#32BDD2; padding-right: 80px;">Back</a>
-                    <button type="submit"  onclick="nextPage()"> Next<img src="../IMAGES/arrow.png" width="20" height="20"
-                            style="padding-top: 8px;"></button>
+                    <a href="../../Requisition/HTML/Requistion.html"
+                        style="color:#32BDD2; padding-right: 80px;">Back</a>
+                    <button type="submit" onclick="nextPage()"> Next<img src="../IMAGES/arrow.png" width="20"
+                            height="20" style="padding-top: 8px;"></button>
                 </div>
             </div>
             <script>
                 function nextPage() {
-                    document.location = "../../Request-Attachment/HTML/ReqAttachments.html";
+                    document.location = "../../Request-Attachment-1/HTML/Req-Attachment-1.html";
                 }
             </script>
+
+
+            <script>
+
+                function myFunction() {
+                    document.getElementById("myDropdown").classList.toggle("show");
+                }
+
+                window.onclick = function (event) {
+                    if (!event.target.matches('.dropbtn')) {
+                        var dropdowns = document.getElementsByClassName("dropdown-content");
+                        var i;
+                        for (i = 0; i < dropdowns.length; i++) {
+                            var openDropdown = dropdowns[i];
+                            if (openDropdown.classList.contains('show')) {
+                                openDropdown.classList.remove('show');
+                            }
+                        }
+                    }
+                }
+            </script>
+
 
         </div>
     </div>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add Items</title>
+    <link rel="stylesheet" type="text/css" href="../CSS/Add-people-result-5.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="popup-flex">
+
+        <div class="head-bar-flex">
+            <div class="head-bar-text">
+                <span>Add People</span>
+            </div>
+
+            <div class="head-bar-img" onclick="nextPage()">
+                <img src="../images/into.png" width="30" height="30">
+            </div>
+        </div>
+
+
+
+        <div class="myreq-search" onclick="single()">
+            <input type="text" size="40" placeholder="         Parvati">
+            <img src='../images/search.png' width="25" height="25">
+        </div>
+        <script>
+            function single() {
+                window.location = "../../Add-people-single-5/HTML/Add-people-single-5.html";
+            }
+        </script>
+
+        <div class="result-main">
+            <div class="result">
+
+                <div class="result-img">
+                    <img src="../images/result.png" width="90" height="90">
+                </div>
+                <div class="found">
+                    <p>No Result Found</p>
+                </div>
+                <div class="text">
+                    <p>We can’t find any item matching</p> your search
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div class="bottom-bar-flex">
+			<div>
+				<a href="../../RequestApprove/HTML/Request-Approve.html">Cancel</a>
+			</div>
+			<div>
+				<button type="submit" onclick="nextPage()">Done</button>
+			</div>
+			<script>
+				function nextPage() {
+
+					document.location = "../../RequestApprove/HTML/Request-Approve.html";
+				}
+
+			</script>
+		</div>
+
+    </div>
+
+
+
+</body>
+
+</html>

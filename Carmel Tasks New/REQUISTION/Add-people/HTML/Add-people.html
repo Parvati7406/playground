@@ -13,7 +13,7 @@
 
         <div class="head-bar-flex">
             <div class="head-bar-text">
-                <span>Add Item</span>
+                <span>Add People</span>
             </div>
 
             <div class="head-bar-img" onclick="nextPage()">
@@ -29,10 +29,15 @@
         </script>
 
 
-        <div class="myreq-search">
+        <div class="myreq-search" onclick="search()">
             <input type="text" size="40" placeholder="         Search">
             <img src='../images/search.png' width="25" height="25">
         </div>
+        <script>
+        function search(){
+            window.location="../../Add-people-result/HTML/Add-people-result.html";
+        }
+        </script>
 
         <div class="box-main">
             <div class="box-flex">
@@ -43,10 +48,15 @@
                     <span class="font-12">Parvati</span>
                     <span class="font-10">Lorem ipsum dolor sit amet.</span>
                 </div>
-                <div class="box-flex-img">
-                    <img src="../images/plus.png" width="30" height="30">
+                <div class="box-flex-img" onclick="add()">
+                    <img src="../images/plus.png"  width="30" height="30">
                 </div>
             </div>
+            <script>
+            function add(){
+                window.location="../../Add-people-change/HTML/Add-people-change.html";
+            }
+            </script>
 
 
 

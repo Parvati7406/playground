@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Add Items</title>
+    <link rel="stylesheet" type="text/css" href="../css/Add-people-single-5.css">
+    <link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>
+</head>
+
+<body>
+
+    <div class="popup-flex">
+
+        <div class="head-bar-flex">
+            <div class="head-bar-text">
+                <span>Add People</span>
+            </div>
+
+            <div class="head-bar-img" onclick="nextPage()">
+                <img src="../images/into.png" width="30" height="30">
+            </div>
+        </div>
+
+
+
+        <div class="myreq-search">
+            <input type="text" size="40" placeholder="         Parvati">
+            <img src='../images/search.png' width="25" height="25">
+        </div>
+
+        <div class="box-main">
+            <div class="box-flex">
+                <div class="box-flex-dp">
+                    <img src="../images/p.jpg" width="35" height="35">
+                </div>
+                <div class="box-flex-data">
+                    <span class="font-12">Parvati</span>
+                    <span class="font-10">Lorem ipsum dolor sit amet.</span>
+                </div>
+                <div class="box-flex-img" onclick="add()">
+                    <img src="../images/plus.png" width="30" height="30">
+                </div>
+            </div>
+
+            <script>
+                function add() {
+                    window.location = "../../Add-people-change-5/HTML/Add-people-change-5.html";
+                }
+            </script>
+        </div>
+        <div class="bottom-bar-flex">
+            <div>
+                <a href="../../RequestApprove/HTML/Request-Approve.html">Cancel</a>
+            </div>
+            <div>
+                <button type="submit" onclick="nextPage()">Done</button>
+            </div>
+            <script>
+                function nextPage() {
+
+                    document.location = "../../RequestApprove/HTML/Request-Approve.html";
+                }
+
+            </script>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>
