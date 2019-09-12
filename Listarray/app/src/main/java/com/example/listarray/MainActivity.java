@@ -16,6 +16,7 @@ public class MainActivity extends AppCompatActivity {
     Button btn3;
     TextView text1;
     ArrayList<Integer> a;
+    int count=0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                a.add(0,3);
-                a.add(1,4);
-                a.add(2,5);
+
+                count++;
+                a.add(count);
 
             }
 
@@ -44,14 +45,16 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-                a.remove(2);
+                a.remove(a.size()-1);
+                count--;
             }
         });
         btn3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                text1.setText(" ");
                 for (int i = 0; i < a.size(); i++) {
-                    text1.setText(a.get(i));
+                    text1.setText(text1.getText()+String.valueOf(a.get(i))+"\n");
                 }
             }
         });
