@@ -56,7 +56,7 @@ public class request_page extends AppCompatActivity
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent3=new Intent(getApplicationContext(), Recycler.class);
+                Intent intent3=new Intent(getApplicationContext(), requisition.class);
                 startActivity(intent3);
             }
         });
