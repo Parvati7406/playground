@@ -17,4 +17,5 @@
     <string name="menu_send">Send</string>
     <string name="title_activity_request_list">Request</string>
     <string name="title_activity_requisition">Requisition</string>
+    <string name="title_activity_requisition_form1">requisition_form1</string>
 </resources>

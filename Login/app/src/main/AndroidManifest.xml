@@ -10,6 +10,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
+        <activity
+            android:name=".requisition_form1"
+            android:label="@string/title_activity_requisition_form1"
+            android:theme="@style/AppTheme.NoActionBar"></activity>
         <activity android:name=".JsonSample" />
         <activity android:name=".MainActivity">
             <intent-filter>
