@@ -4,6 +4,8 @@ import android.content.Intent;
 import android.database.DataSetObserver;
 import android.os.Bundle;
 
+import com.example.login.Global.Request_status;
+import com.example.login.Model.Request_model;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
 
@@ -25,6 +27,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.view.Menu;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
 import android.widget.Button;
 import android.widget.ImageView;
@@ -43,12 +46,14 @@ public class request_page extends AppCompatActivity
     ListView listView;
     Button btn;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_request_page);
 
-        String[] items = {"Approved", "Rejected", "Draft", "Awaiting", "Completed"};
+        final String[] items = {"Approved", "Rejected", "Draft", "Awaiting", "Completed"};
 
         listView = findViewById(R.id.list_view);
         btn=findViewById(R.id.button3);
@@ -60,30 +65,83 @@ public class request_page extends AppCompatActivity
                 startActivity(intent3);
             }
         });
-        ArrayList<String> a1 = new ArrayList<>();
-        ArrayList<String> a2 = new ArrayList<>();
-        ArrayList<String> a3 = new ArrayList<>();
+//        ArrayList<String> a1 = new ArrayList<>();
+//        ArrayList<String> a2 = new ArrayList<>();
+//        ArrayList<String> a3 = new ArrayList<>();
 
-        a1.add("PUR - 2019 - 056");
-        a1.add("PUR - 2019 - 057");
-        a1.add("PUR - 2019 - 058");
-        a1.add("PUR - 2019 - 059");
+        final ArrayList<Request_model> request_list=new ArrayList<>();
+
+Request_model request_model=new Request_model();
+
+request_model.setRequest_num("PUR - 2019 - 056");
+request_model.setRequest_date("06 Jul 2019");
+request_model.setRequest_status(Request_status.APPROVED);
+        request_list.add(request_model);
 
 
-        a2.add("06 Jul 2019");
-        a2.add("06 Jul 2019");
-        a2.add("06 Jul 2019");
-        a2.add("06 Jul 2018");
 
-        a3.add("Approved");
-        a3.add("Reject");
-        a3.add("Draft");
-        a3.add("Awaiting");
+        request_model=new Request_model();
 
+
+        request_model.setRequest_num("PUR - 2019 - 057");
+        request_model.setRequest_date("06 Jul 2019");
+        request_model.setRequest_status(Request_status.REJECTED);
+
+        request_list.add(request_model);
+
+        request_model=new Request_model();
+
+        request_model.setRequest_num("PUR - 2019 - 058");
+        request_model.setRequest_date("06 Jul 2019");
+        request_model.setRequest_status(Request_status.DRAFT);
+        request_list.add(request_model);
+
+
+
+
+        listView=findViewById(R.id.list_view);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
+
+                Intent intent=new Intent(request_page.this, com.example.login.RequestView.class);
+
+                Request_model request=request_list.get(i);
+
+                Bundle requestDataBundle=new Bundle();
+                requestDataBundle.putString("RequestNo",request.getRequest_num());
+                requestDataBundle.putString("RequestDate",request.getRequest_date());
+                requestDataBundle.putString("RequestStatus",request.getRequest_status().toString());
+                intent.putExtra("request",requestDataBundle);
+                startActivity(intent);
+            }
+        });
+
+
+//        a1.add("PUR - 2019 - 056");
+//        a1.add("PUR - 2019 - 057");
+//        a1.add("PUR - 2019 - 058");
+//        a1.add("PUR - 2019 - 059");
+//
+//
+//        a2.add("06 Jul 2019");
+//        a2.add("06 Jul 2019");
+//        a2.add("06 Jul 2019");
+//        a2.add("06 Jul 2018");
+//
+//        a3.add("Approved");
+//        a3.add("Reject");
+//        a3.add("Draft");
+//        a3.add("Awaiting");
+//
 
 // String statusColors
 
-        ListAdapter listAdapter = new com.example.login.List_Adapter(getApplicationContext(), a1, a2, a3);
+
+
+
+
+        ListAdapter listAdapter = new com.example.login.List_Adapter(getApplicationContext(), request_list);
         listView.setAdapter(listAdapter);
 
         image = findViewById(R.id.imageView7);
