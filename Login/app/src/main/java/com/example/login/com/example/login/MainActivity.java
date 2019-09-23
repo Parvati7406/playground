@@ -30,6 +30,17 @@ public class MainActivity extends AppCompatActivity {
         text3=findViewById(R.id.textView2);
         edit1=findViewById(R.id.editText);
 
+
+text3.setOnClickListener(new View.OnClickListener() {
+    @Override
+    public void onClick(View view) {
+        Intent i=new Intent(getApplicationContext(),Forgot_Password.class);
+        startActivity(i);
+    }
+});
+
+
+
         btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
@@ -42,7 +53,7 @@ public class MainActivity extends AppCompatActivity {
             }
 
                 else{
-                    Intent intent1=new Intent(getApplicationContext(),request_page.class );
+                    Intent intent1=new Intent(getApplicationContext(), com.example.login.FragmentRequisitionForm.class );
                     startActivity(intent1);
 
 
@@ -54,12 +65,6 @@ public class MainActivity extends AppCompatActivity {
 
 
 
-        text3.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent=new Intent(getApplicationContext(), com.example.login.Forgot_Password.class );
-                startActivity(intent);
-            }
-        });
+
     }
 }
