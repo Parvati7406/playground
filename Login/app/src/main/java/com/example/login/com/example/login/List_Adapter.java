@@ -24,7 +24,6 @@ public class List_Adapter extends BaseAdapter {
 //    ArrayList<Request_model> request_status;
 
 
-
 //    public List_Adapter(Context context, ArrayList<String> a1, ArrayList<String> a2, ArrayList<String> a3) {
 //        this.ar1=a1;
 //        this.ar2=a2;
@@ -36,8 +35,8 @@ public class List_Adapter extends BaseAdapter {
 
     public List_Adapter(Context context, ArrayList<Request_model> request_list) {
 
-        this.context=context;
-        this.req_list=request_list;
+        this.context = context;
+        this.req_list = request_list;
 
     }
 
@@ -50,23 +49,25 @@ public class List_Adapter extends BaseAdapter {
     public Object getItem(int position) {
         return null;
     }
+
     @Override
     public long getItemId(int position) {
         return 0;
     }
+
     @Override
 
     public View getView(int position, View convertView, ViewGroup parent) {
-        View view=LayoutInflater.from(context).inflate(R.layout.list_view,parent,false);
+        View view = LayoutInflater.from(context).inflate(R.layout.list_view, parent, false);
 
-        Request_model request_model=this.req_list.get(position);
+        Request_model request_model = this.req_list.get(position);
 
-        TextView title,date,statusText;
+        TextView title, date, statusText;
         ImageView imageView;
-        imageView=view.findViewById(R.id.imageView8);
-        title=view.findViewById(R.id.title);
-        date=view.findViewById(R.id.date);
-        statusText=view.findViewById(R.id.status);
+        imageView = view.findViewById(R.id.imageView8);
+        title = view.findViewById(R.id.title);
+        date = view.findViewById(R.id.date);
+        statusText = view.findViewById(R.id.status);
 
         title.setText(String.valueOf(request_model.getRequest_num()));
         date.setText(String.valueOf(request_model.getRequest_date()));
