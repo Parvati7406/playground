@@ -433,7 +433,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="16dp"
-                    android:layout_marginTop="18dp"
+                    android:layout_marginTop="8dp"
                     android:text="Lorem ipsum dolor sit amet, consectetur…"
                     android:textSize="10sp"
                     app:layout_constraintStart_toStartOf="parent"

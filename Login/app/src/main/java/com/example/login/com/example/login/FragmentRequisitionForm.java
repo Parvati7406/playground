@@ -1,47 +1,22 @@
 package com.example.login;
 
-import android.content.Intent;
+import android.content.res.Configuration;
 import android.os.Bundle;
 
-import com.example.login.Global.Request_status;
-import com.example.login.Model.RequestViewListItem;
 import com.example.login.Model.Request_model;
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-
-import android.view.View;
-
-import androidx.core.view.GravityCompat;
-import androidx.appcompat.app.ActionBarDrawerToggle;
-
-import android.view.MenuItem;
-
-import com.google.android.material.navigation.NavigationView;
-
-import androidx.drawerlayout.widget.DrawerLayout;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.appcompat.widget.Toolbar;
+
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
-import android.view.Menu;
-import android.widget.AdapterView;
-import android.widget.Button;
-import android.widget.ImageView;
-import android.widget.ListAdapter;
-import android.widget.ListPopupWindow;
-import android.widget.ListView;
-import android.widget.TextView;
 
-import java.util.ArrayList;
 
 import Deligate.DeligateInterface;
 
 public class FragmentRequisitionForm extends AppCompatActivity
         implements DeligateInterface {
-
 
 
     @Override
@@ -63,17 +38,28 @@ public class FragmentRequisitionForm extends AppCompatActivity
     @Override
     public void deligateFragment(Request_model request_model) {
 
-//        int i=0;
-        Fragment two= new com.example.login.FragmentReuestView();
 
-        FragmentManager FM=getSupportFragmentManager();
+        int orientation = this.getResources().getConfiguration().orientation;
 
-        FragmentTransaction FT=FM.beginTransaction();
-        FT.replace(R.id.fragmentDisplay,two);
-        FT.addToBackStack(null);
-        FT.commit();
+        if (orientation == Configuration.ORIENTATION_PORTRAIT) {
+
+            Fragment two = new com.example.login.FragmentReuestView();
+            FragmentManager FM = getSupportFragmentManager();
+            FragmentTransaction FT = FM.beginTransaction();
+            FT.addToBackStack(null);
+            FT.replace(R.id.fragmentDisplay, two);
+            FT.commit();
+        }
+        else {
+            Fragment two = new com.example.login.FragmentReuestView();
+            FragmentManager FM = getSupportFragmentManager();
+            FragmentTransaction FT = FM.beginTransaction();
+            FT.replace(R.id.fragmentDisplay1, two);
+            FT.addToBackStack(null);
+            FT.commit();
 
 
+        }
     }
 }
 
