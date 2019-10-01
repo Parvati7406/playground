@@ -11,16 +11,18 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ListAdapter;
 import android.widget.ListView;
+import android.widget.TextView;
 
 import com.example.login.Model.RequestViewListItem;
+import com.example.login.Model.Request_model;
 
 import java.util.ArrayList;
 
 
 public class FragmentReuestView extends Fragment {
     ListView listView;
-
-
+    Request_model requestModel;
+    TextView Reqno,Reqdate,Reqstatus;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
@@ -28,7 +30,13 @@ public class FragmentReuestView extends Fragment {
         // Inflate the layout for this fragment
         View view= inflater.inflate(R.layout.fragment_fragment_reuest_view, container, false);
 
+        Reqno=view.findViewById(R.id.title);
+        Reqdate=view.findViewById(R.id.date);
+        Reqstatus=view.findViewById(R.id.status);
 
+        Reqno.setText(requestModel.getRequest_num());
+        Reqdate.setText(requestModel.getRequest_date());
+        Reqstatus.setText(requestModel.getRequest_status().toString());
 
 
         final ArrayList<RequestViewListItem> request_list=new ArrayList<>();
@@ -80,7 +88,9 @@ public class FragmentReuestView extends Fragment {
 
 
 
-
+public void setData(Request_model requestModel){
+        this.requestModel=requestModel;
+}
 
 
 

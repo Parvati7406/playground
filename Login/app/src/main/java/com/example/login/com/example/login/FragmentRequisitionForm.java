@@ -49,6 +49,8 @@ public class FragmentRequisitionForm extends AppCompatActivity
             FT.addToBackStack(null);
             FT.replace(R.id.fragmentDisplay, two);
             FT.commit();
+
+             ((FragmentReuestView) two).setData(request_model);
         }
         else {
             Fragment two = new com.example.login.FragmentReuestView();
@@ -57,7 +59,7 @@ public class FragmentRequisitionForm extends AppCompatActivity
             FT.replace(R.id.fragmentDisplay1, two);
             FT.addToBackStack(null);
             FT.commit();
-
+            ((FragmentReuestView) two).setData(request_model);
 
         }
     }
