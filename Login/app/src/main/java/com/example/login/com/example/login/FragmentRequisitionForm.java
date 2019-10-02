@@ -28,12 +28,40 @@ public class FragmentRequisitionForm extends AppCompatActivity
 
         ((FragmentRequestList) One).setDeligateInterface(this);
         FragmentManager FM = getSupportFragmentManager();
+        FM.popBackStackImmediate(null,FragmentManager.POP_BACK_STACK_INCLUSIVE);
         FragmentTransaction FT = FM.beginTransaction();
         FT.add(R.id.fragmentDisplay, One);
         FT.commit();
-
-
     }
+
+    @Override
+    public void onConfigurationChanged(Configuration con){
+        super.onConfigurationChanged(con);
+
+        if (con.orientation==Configuration.ORIENTATION_PORTRAIT){
+
+            Fragment two = new com.example.login.FragmentReuestView();
+            FragmentManager FM = getSupportFragmentManager();
+            FragmentTransaction FT = FM.beginTransaction();
+            FT.addToBackStack(null);
+            FT.replace(R.id.fragmentDisplay, two);
+            FT.commit();
+
+        }
+
+     else {
+
+            Fragment two = new com.example.login.FragmentReuestView();
+            FragmentManager FM = getSupportFragmentManager();
+            FragmentTransaction FT = FM.beginTransaction();
+            FT.addToBackStack(null);
+            FT.replace(R.id.fragmentDisplay1, two);
+            FT.commit();
+        }
+    }
+
+
+
 
     @Override
     public void deligateFragment(Request_model request_model) {
@@ -55,6 +83,7 @@ public class FragmentRequisitionForm extends AppCompatActivity
         else {
             Fragment two = new com.example.login.FragmentReuestView();
             FragmentManager FM = getSupportFragmentManager();
+            FM.popBackStackImmediate(null,FragmentManager.POP_BACK_STACK_INCLUSIVE);
             FragmentTransaction FT = FM.beginTransaction();
             FT.replace(R.id.fragmentDisplay1, two);
             FT.addToBackStack(null);
