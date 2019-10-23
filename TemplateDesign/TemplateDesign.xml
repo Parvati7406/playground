@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?> 
+<?xml-stylesheet type="text/xsl" href="TemplateDesign.xsl" ?> 
+ <Wishes> 
+  <person> 
+   <name> Ankita </name> 
+   <DOB> 03/06/1997</DOB> 
+   <age>18</age> 
+   <wish> WISH YOU VERY HAPPY BIRTHDAY </wish> 
+  </person> 
+  <s> 
+   <name> Aniket Chauhan </name> 
+   <branch> CSE</branch> 
+   <age> 20</age> 
+   <city> Shahjahanpur </city> 
+  </s> 
+  <s>  
+   <name> Simran Agarwal</name> 
+   <branch> CSE</branch> 
+   <age> 23</age> 
+   <city> Buland Shar</city> 
+  </s> 
+  <s>  
+   <name> Abhay Chauhan</name> 
+   <branch> CSE</branch> 
+   <age> 17</age> 
+   <city> Shahjahanpur</city> 
+  </s> 
+  <s>  
+   <name> Himanshu Bhatia</name> 
+   <branch> IT</branch> 
+   <age> 25</age> 
+   <city> Indore</city> 
+  </s> 
+ </Wishes> 
